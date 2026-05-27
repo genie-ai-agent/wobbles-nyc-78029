@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NYC Wobbles · Knicks Finals Edition</title>
+  <meta name="description" content="Special edition NYC Wobbles. Available only to fans inside the five boroughs for the Knicks Championship Finals run." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Loading / gate state -->
+  <div id="gate" class="gate">
+    <div class="gate-inner">
+      <div class="gate-logo">
+        <span class="gate-logo-n">N</span><span class="gate-logo-y">Y</span><span class="gate-logo-c">C</span>
+      </div>
+      <h1 id="gate-title" class="gate-title">Checking your location…</h1>
+      <p id="gate-sub" class="gate-sub">This drop is for New York City only. Allow location access to continue.</p>
+      <div id="gate-spinner" class="gate-spinner"></div>
+      <button id="gate-retry" class="gate-retry" hidden>Try again</button>
+    </div>
+  </div>
+
+  <!-- Main page -->
+  <main id="page" class="page" hidden>
+
+    <!-- Top banner -->
+    <div class="ticker">
+      <div class="ticker-track">
+        <span>NYC FINALS EDITION</span><span>·</span>
+        <span>FIVE BOROUGHS ONLY</span><span>·</span>
+        <span>FOUNDING MEMBER BADGE</span><span>·</span>
+        <span>FREE SHIPPING</span><span>·</span>
+        <span>NYC FINALS EDITION</span><span>·</span>
+        <span>FIVE BOROUGHS ONLY</span><span>·</span>
+        <span>FOUNDING MEMBER BADGE</span><span>·</span>
+        <span>FREE SHIPPING</span><span>·</span>
+      </div>
+    </div>
+
+    <header class="nav">
+      <a class="nav-brand" href="https://jellyjelly.com">jellyjelly</a>
+      <span class="nav-tag">NYC Finals Edition</span>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            <span>Live · Verified inside NYC</span>
+          </div>
+          <h1 class="hero-title">
+            <span class="line-1">BRING IT</span>
+            <span class="line-2">HOME,</span>
+            <span class="line-3">NEW YORK.</span>
+          </h1>
+          <p class="hero-lede">
+            A special edition <strong>NYC Wobbles</strong> for the Knicks Championship Finals run. Sold only to fans standing inside the five boroughs. When the Garden lifts the trophy, you were here.
+          </p>
+          <div class="hero-cta">
+            <a href="#shop" class="btn btn-primary">Buy NYC Wobbles · $67</a>
+            <a href="#schedule" class="btn btn-ghost">Finals schedule</a>
+          </div>
+          <div class="hero-meta">
+            <div><span class="hero-meta-num">23</span><span>Founding editions left</span></div>
+            <div><span class="hero-meta-num">5</span><span>Boroughs verified</span></div>
+            <div><span class="hero-meta-num">1</span><span>City that matters</span></div>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="hero-art-ring"></div>
+          <img class="hero-art-img" src="https://jellyjelly.com/brand/wobbles/wobbles-collectible.png" alt="NYC Wobbles collectible" />
+          <div class="hero-art-stamp">
+            <span>NYC</span><span>·</span><span>FINALS</span><span>·</span><span>EDITION</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule -->
+    <section class="schedule" id="schedule">
+      <div class="section-head">
+        <h2>Knicks Finals Schedule</h2>
+        <p>Western Conference champion TBD. Tip times in ET.</p>
+      </div>
+      <div id="schedule-list" class="schedule-list"></div>
+      <p class="schedule-note">Schedule placeholders pending the official NBA Finals slate. Refresh once the WCF concludes.</p>
+    </section>
+
+    <!-- Shop -->
+    <section class="shop" id="shop">
+      <div class="shop-grid">
+        <div class="shop-art">
+          <img src="https://jellyjelly.com/brand/wobbles/wobbles-collectible.png" alt="NYC Wobbles" />
+          <div class="shop-art-pill">NYC EXCLUSIVE</div>
+        </div>
+        <div class="shop-detail">
+          <div class="shop-eyebrow">Founding Edition · Knicks Finals</div>
+          <h2>NYC Wobbles</h2>
+          <div class="shop-price"><span class="shop-price-num">$67</span><span class="shop-price-unit">per item</span></div>
+          <ul class="shop-list">
+            <li>Free worldwide shipping</li>
+            <li>Exclusive founding member badge</li>
+            <li>Unique serial number for first 100 buyers</li>
+            <li>Ships within 4–6 weeks</li>
+          </ul>
+          <div class="qty">
+            <span class="qty-label">Quantity</span>
+            <div class="qty-control">
+              <button id="qty-minus" aria-label="Decrease">−</button>
+              <span id="qty-val">1</span>
+              <button id="qty-plus" aria-label="Increase">+</button>
+            </div>
+            <span class="qty-max">Max 10</span>
+          </div>
+          <div class="summary">
+            <div class="summary-row"><span>Subtotal (<span id="sum-qty">1</span> item)</span><span id="sum-sub">$67.00</span></div>
+            <div class="summary-row"><span>Shipping</span><span class="summary-free">FREE</span></div>
+            <div class="summary-total"><span>Total</span><span id="sum-total">$67.00 USD</span></div>
+          </div>
+          <a href="https://jellyjelly.com/wobbles#wobbles-shop" class="btn btn-primary btn-block">Proceed to Checkout</a>
+          <p class="shop-fine">Checkout completes on jellyjelly.com. Your NYC verification carries over.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- City strip -->
+    <section class="strip">
+      <div class="strip-row">
+        <span>BROOKLYN</span><span class="strip-dot"></span>
+        <span>QUEENS</span><span class="strip-dot"></span>
+        <span>THE BRONX</span><span class="strip-dot"></span>
+        <span>MANHATTAN</span><span class="strip-dot"></span>
+        <span>STATEN ISLAND</span>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <div>© jellyjelly · NYC Finals Edition Wobbles</div>
+      <div><a href="https://jellyjelly.com">jellyjelly.com</a></div>
+    </footer>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
